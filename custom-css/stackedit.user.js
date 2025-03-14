@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Custom CSS - stackedit
 // @namespace    https://github.com/athrunsun
-// @version      0.1
+// @version      0.1.0
 // @author       okampfer <okampfer@foxmail.com>
 // @match        *://*.stackedit.io/*
 // @grant        none

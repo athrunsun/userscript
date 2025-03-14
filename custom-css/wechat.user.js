@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Custom CSS - wechat
 // @namespace    https://github.com/athrunsun
-// @version      0.1
+// @version      0.1.0
 // @author       okampfer <okampfer@foxmail.com>
 // @match        *://wx*.qq.com/*
 // @grant        none
