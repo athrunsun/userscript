@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Custom CSS - DeepSeek chat
 // @namespace    https://github.com/athrunsun
-// @version      0.1.0
+// @version      0.1.1
 // @author       okampfer <okampfer@foxmail.com>
 // @match        *://chat.deepseek.com/*
 // @grant        none
@@ -18,6 +18,10 @@
 
   const css = `
     #root > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div > div > div {
+      max-width: unset;
+    }
+
+    #root > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div > div > div:nth-child(3) > div:first-child {
       max-width: unset;
     }
   `;
