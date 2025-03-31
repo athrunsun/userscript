@@ -10,30 +10,30 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
+  'use strict';
 
-    const style = document.createElement('style');
-    style.type = 'text/css';
-    style.setAttribute('data-name', 'reddit');
+  const style = document.createElement('style');
+  style.type = 'text/css';
+  style.setAttribute('data-name', 'reddit');
 
-    const css = `
-        .ListingLayout-backgroundContainer + div {
-            background-color: #252525;
-        }
+  const css = `
+    .ListingLayout-backgroundContainer + div {
+      background-color: #252525;
+    }
 
-        div[tabindex='0'] + div {
-            background-color: #2d2d2d;
-        }
+    div[tabindex='0'] + div {
+      background-color: #2d2d2d;
+    }
 
-        div[tabindex='0'] + div > div {
-            background-color: #2d2d2d;
-        }
+    div[tabindex='0'] + div > div {
+      background-color: #2d2d2d;
+    }
 
-        .RichTextJSON-root p {
-            color: #ccc;
-        }
-    `;
+    .RichTextJSON-root p {
+      color: #ccc;
+    }
+  `;
 
-    style.appendChild(document.createTextNode(css));
-    document.head.appendChild(style);
+  style.appendChild(document.createTextNode(css));
+  document.head.appendChild(style);
 })();

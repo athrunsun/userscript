@@ -10,24 +10,23 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
+  'use strict';
 
-    const style = document.createElement('style');
-    style.type = 'text/css';
-    style.setAttribute('data-name', 'jbt-markdown-editor');
+  const style = document.createElement('style');
+  style.type = 'text/css';
+  style.setAttribute('data-name', 'jbt-markdown-editor');
 
-    const css = `
-        .CodeMirror-code {
-            font-size: 16px;
-        }
+  const css = `
+    .CodeMirror-code {
+        font-size: 16px;
+    }
 
-        #out {
-            background: #ffffff;
-            font-family: 'JetBrains Mono Medium', 'Cascadia Mono', Monaco, 'Noto Sans CJK SC', 'Microsoft Yahei UI',
-                'WenQuanYi Micro Hei';
-        }
-    `;
+    #out {
+      background: #ffffff;
+      font-family: 'JetBrains Mono Medium', 'Cascadia Mono', Monaco, 'Noto Sans CJK SC', 'Microsoft Yahei UI', 'WenQuanYi Micro Hei';
+    }
+  `;
 
-    style.appendChild(document.createTextNode(css));
-    document.head.appendChild(style);
+  style.appendChild(document.createTextNode(css));
+  document.head.appendChild(style);
 })();

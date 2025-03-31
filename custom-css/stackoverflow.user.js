@@ -10,22 +10,22 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
+  'use strict';
 
-    const style = document.createElement('style');
-    style.type = 'text/css';
-    style.setAttribute('data-name', 'stackoverflow');
+  const style = document.createElement('style');
+  style.type = 'text/css';
+  style.setAttribute('data-name', 'stackoverflow');
 
-    const css = `
-        .post-text p {
-            color: #ccc;
-        }
+  const css = `
+    .post-text p {
+      color: #ccc;
+    }
 
-        .comment .comment-text {
-            color: #ccc;
-        }
-    `;
+    .comment .comment-text {
+      color: #ccc;
+    }
+  `;
 
-    style.appendChild(document.createTextNode(css));
-    document.head.appendChild(style);
+  style.appendChild(document.createTextNode(css));
+  document.head.appendChild(style);
 })();

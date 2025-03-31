@@ -10,31 +10,29 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
+  'use strict';
 
-    const style = document.createElement('style');
-    style.type = 'text/css';
-    style.setAttribute('data-name', 'stackedit');
+  const style = document.createElement('style');
+  style.type = 'text/css';
+  style.setAttribute('data-name', 'stackedit');
 
-    const css = `
-        #preview-contents {
-            font-family: 'JetBrains Mono Medium', 'Cascadia Mono', Monaco, 'Noto Sans CJK SC', 'Microsoft Yahei UI',
-                'WenQuanYi Micro Hei';
-            font-size: 16px;
-        }
+  const css = `
+    #preview-contents {
+      font-family: 'JetBrains Mono Medium', 'Cascadia Mono', Monaco, 'Noto Sans CJK SC', 'Microsoft Yahei UI', 'WenQuanYi Micro Hei';
+      font-size: 16px;
+    }
 
-        .preview-panel {
-            background: #ffffff;
-        }
+    .preview-panel {
+      background: #ffffff;
+    }
 
-        .preview {
-            font-family: 'JetBrains Mono Medium', 'Cascadia Mono', Monaco, 'Noto Sans CJK SC', 'Microsoft Yahei UI',
-                'WenQuanYi Micro Hei';
-            font-size: 16px;
-            background: #ffffff;
-        }
-    `;
+    .preview {
+      font-family: 'JetBrains Mono Medium', 'Cascadia Mono', Monaco, 'Noto Sans CJK SC', 'Microsoft Yahei UI', 'WenQuanYi Micro Hei';
+      font-size: 16px;
+      background: #ffffff;
+    }
+  `;
 
-    style.appendChild(document.createTextNode(css));
-    document.head.appendChild(style);
+  style.appendChild(document.createTextNode(css));
+  document.head.appendChild(style);
 })();
